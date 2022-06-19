@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk&family=Titillium+Web:wght@400;700&display=swap');
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.currency-font {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.title-buy-sell {
+    font-size: 0.8rem;
+}
+
+.date-font {
+    font-size: 0.7rem;
+}
