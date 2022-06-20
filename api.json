@@ -1,0 +1,66 @@
+[
+  {
+    "casa": {
+      "compra": "121,96",
+      "venta": "127,96",
+      "agencia": "349",
+      "nombre": "DOLAR OFICIAL",
+      "variacion": "0,27",
+      "ventaCero": "TRUE",
+      "decimales": "2"
+    }
+  },
+  {
+    "casa": {
+      "compra": "216,00",
+      "venta": "219,00",
+      "agencia": "310",
+      "nombre": "DOLAR BLUE",
+      "variacion": "-2,23",
+      "ventaCero": "TRUE",
+      "decimales": "2"
+    }
+  },
+  {
+    "casa": {
+      "compra": "237,79",
+      "venta": "238,14",
+      "agencia": "312",
+      "nombre": "DOLAR CONTADO CON LIQUI",
+      "variacion": "-0,41",
+      "ventaCero": "TRUE",
+      "decimales": "2"
+    }
+  },
+  {
+    "casa": {
+      "compra": "229,450",
+      "venta": "229,080",
+      "agencia": "313",
+      "nombre": "DOLAR BOLSA",
+      "variacion": "-1,500",
+      "ventaCero": "TRUE",
+      "decimales": "3"
+    }
+  },
+  {
+    "casa": {
+      "nombre": "DOLAR TURISTA",
+      "compra": "No Cotiza",
+      "venta": "211,13",
+      "agencia": "406",
+      "variacion": "0,27",
+      "ventaCero": "TRUE",
+      "decimales": "2"
+    }
+  },
+  {
+    "casa": {
+      "compra": "120,37",
+      "venta": "128,25",
+      "agencia": "302",
+      "nombre": "DOLAR PROMEDIO",
+      "decimales": "3"
+    }
+  }
+]

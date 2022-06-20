@@ -1,14 +1,14 @@
 let contenido = document.querySelector("#dolares");
 
 function fetchear() {
-  fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
+  fetch("api.json")
     .then((res) => res.json())
     .then((data) => {
       pintar(data);
     });
 }
 
-fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
+fetch("api.json")
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
@@ -20,9 +20,7 @@ function pintar(data) {
 
   <div class="row">
             <div class="col-12 p-2 bg-success bg-opacity-50">
-              <p class="m-0 text-center text-white">${
-                data[valores["nombre"]]
-              }</p>
+              <p class="m-0 text-center text-white">${data["0"]["casa"]["nombre"]}</p>
             </div>
             <div class="col-12 py-4 d-flex flex-row justify-content-around">
               <div class="d-flex flex-column">
