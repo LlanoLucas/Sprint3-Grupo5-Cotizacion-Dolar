@@ -1,5 +1,3 @@
-let oficial = fetch("api.json")
+let cotizaciones = fetch("api.json")
   .then((res) => res.json())
-  .then((data) => console.log(data[0]["venta"]));
-
-console.log();
+  .then((data) => console.log(data["0"[3]]));
