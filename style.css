@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk&family=Titillium+Web:wght@400;700&display=swap");
 
+#todo {
+  position: relative;
+  margin-left: 20%;
+}
+
 p {
   font-family: "Roboto", sans-serif;
 }
@@ -28,4 +33,5 @@ h1 {
   padding-top: 13px;
   text-align: center;
   color: white;
+  width: 100vw;
 }
