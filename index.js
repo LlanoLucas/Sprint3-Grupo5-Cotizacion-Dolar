@@ -1,18 +1,11 @@
-let blue = fetch("api.json")
+fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
   .then((res) => res.json())
-  .then((data) => document.write(data["0"]["casa"]["nombre"]));
+  .then((data) => console.log(data["0"]["casa"]["nombre"]));
 
 function fetchear(dol) {
   fetch("api.json")
     .then((res) => res.json())
-    .then((data) => document.write(data[dol]["casa"]["nombre"]));
+    .then((data) => document.write(data[dol]["casa"]));
 }
 
-function printear(dolar) {
-  for (let caracteristicas of dolar) {
-    dolar.appendChild(caracteristicas);
-    console.log(dolar);
-  }
-}
-
-fetchear(6);
+fetchear(0);
