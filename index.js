@@ -28,7 +28,7 @@ function pintar(data) {
         <div class="d-flex flex-column">
           <p class="m-0 text-bold title-buy-sell text-center">Compra</p>
           <p
-            class="m-0 text-bold currency-font text-opacity-50 text-danger"
+            class="m-0 text-bold currency-font text-opacity-50 text-success"
           >
           ${data["0"]["casa"]["compra"]}
           </p>
@@ -43,7 +43,7 @@ function pintar(data) {
       <div
         class="col-12 pt-2 text-center p-1 bg-light bg-gradient bg-opacity-50"
       >
-        <p class="m-0 text-danger">Variacion ${data["0"]["casa"]["variacion"]}%</p>
+        <p class="m-0 text-success">Variacion ${data["0"]["casa"]["variacion"]}%</p>
       </div>
       <div
         class="col-12 pb-2 text-center bg-light bg-gradient bg-opacity-50"
