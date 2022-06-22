@@ -1,21 +1,22 @@
-let contenido = document.querySelector("#dolares");
+let contenido = document.querySelector("#dolares"); //SELECCIONO EL CONTAINER CON TODOS LOS DÓLARES
 
 function fetchear() {
   fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
-    .then((res) => res.json())
+    .then((res) => res.json()) // HAGO QUE RES DEVUELVA LA API
     .then((data) => {
+      // A TODA LA DATA QUE ESTA EN LA API LE DOY DE NOMBRE DATA, Y HAGO QUE DEVUELVA LA FUNCION PINTAR CON EL PARÁMETRO DE DATA (LA API)
       pintar(data);
     });
 }
 
-fetch("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
-  });
-
 function pintar(data) {
+  // CREO LA FUNCION PINTAR
   for (let valores of data) {
+    // HAGO UN BUCLE PARA PODER USAR TODOS LOS VALORES DE DATA (ESTO ES INÚTIL, PORQUE NO PUDIMOS HACER EL BUCLE)
+
+    // HUBIERA SIDO MEJOR HACER UN BUCLE, PERO NO ENCONTRAMOS LA FORMA, Y LO TUVIMOS QUE HACER ASÍ
+
+    // ACÁ ABAJO CAMNBIO EL CONTENIDO DEL CONTENEDOR DEL HTML, BÁSICAMENTE COPIO Y PEGO LO QUE ESTABA EN EL HTML Y EDITO LOS VALORES IMPORTANTES CON LA DATA DE LA API
     contenido.innerHTML = `
 
     <div class="col-4 card bg-secondary bg-opacity-25 me-3">
@@ -232,4 +233,4 @@ function pintar(data) {
   }
 }
 
-fetchear();
+fetchear(); // FINALMENTE LLAMO LA FUNCION FETCHEAR PARA QUE SE EJECUTE EL CÓDIGO
